@@ -1,0 +1,257 @@
+/******** Fonts from Google Fonts ********/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Quicksand:wght@400;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Containers */
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.container-wrapper {
+    
+}
+
+.container-wrapper--orange {
+    background-color: #f05f40;
+    color: white;
+}
+
+.container-wrapper--white {
+    background-color: white;
+    color: #111111;
+}
+
+.callout-container {
+    height: 100vh;
+
+    background: url('../images/dummy-image.jpeg') no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container-spacing {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.showreel-container {
+    background: url('../images/dummy-image-2.jpg') no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/******** The navigation bar ********/
+
+
+
+.navalert-container {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #111111;
+    border: 0;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.tag-line {
+    color: #f05f40;
+    text-transform: lowercase;
+    font-weight: lighter;
+}
+
+.navbar .navbar-nav li {
+    color: rgb(255, 255, 255)
+}
+
+
+
+
+
+/* Jumbotron */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.jumbotron .jumbo-tag-line {
+    font-size: 30px;
+    color: #ff8c42;
+    margin: 25px 0;
+}
+
+
+
+
+/* Experience info boxes */
+
+.info-box {
+    color: white;
+    font-weight: bold;
+}
+
+.info-icon {
+    font-size: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.contact-for-quote {
+    font-size: smaller;
+    font-style: italic;
+    line-height: 0%;
+    color: grey;
+}
+
+
+/* Block dividers */
+
+.block-divider {
+    width: 200px;
+    height: 3px;
+    border: 0;
+    background-color: transparent
+}
+
+.block-divider--grey {
+    background-color: #111111;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+.vertical-divider {
+    border-right: 1px solid white;
+    height: 10rem;
+}
+
+/**** Testimonials ****/
+
+.card {
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    display: block;
+    height: 36rem;
+    width: 100%;
+}
+
+.container .card .card-image img {
+    width: 12rem;
+    border-radius: 6rem;
+    margin: 1.3rem auto 1rem auto
+}
+
+.card-name {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #111111;
+}
+
+.card-text {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    color: #111111;
+    line-height: 1.4rem
+}
+
+.card-testimonial {
+    text-align: center;
+}
+
+.job-role {
+    border-top: none;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #111111;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+
+}
+
+
+
+
+
+
+.content-text {
+    line-height: 2.5rem;
+}
+
+#lee-promo-image {
+    float: right;
+    vertical-align: top;
+    margin: 15px 15px 0px 15px; 
+    width: 500px;
+    height: 500px;
+    border: 15px solid #f05f40;
+}
+
