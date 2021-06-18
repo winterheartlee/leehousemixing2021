@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <div class="container-fluid navalert-container">
+        <div class="container-fluid">
             <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
                 <a href="#home" id="section-1" class="navbar-brand">Lee House <span class="tag-line">Mixing &
                         Mastering</span></a>
@@ -36,13 +36,11 @@
                         <li class="nav-item mr-2"><a class="nav-link" href="#about" id="section-4">About</a></li>
                         <li class="nav-item mr-2"><a class="nav-link" href="#contact" id="section-5">Contact</a></li>
                     </ul>
-                    <img src="assets/images/lee-house-logo-50px.png" width="50" height="50" class="d-inline-block"
-                        alt="website logo">
+                    <img src="assets/images/lee-house-logo-50px.png" width="50" height="50"
+                        class="d-inline-block d-none d-md-block " aria-hidden="true">
                 </div>
             </nav>
         </div>
-
-
     </header>
     <section>
         <div id="home" class="container-fluid callout-container">
@@ -61,7 +59,7 @@
                     <p>10+ years experience</p>
                 </div>
                 <div class="col-3 info-box text-center vertical-divider">
-                    <i class="fas fa-microphone info-icon"></i>
+                    <i class="fas fa-sliders-h info-icon"></i>
                     <p>1000+ mixes to date</p>
                 </div>
                 <div class="col-3 info-box text-center vertical-divider">
@@ -71,7 +69,7 @@
                 <div class="col-3 info-box text-center">
                     <i class="fas fa-pound-sign info-icon"></i>
                     <p>£150 average mix & master price</p>
-                    <p class="contact-for-quote">(Contact for quote)</p>
+                    <p class="contact-for-quote d-none d-md-block">(Contact for quote)</p>
                 </div>
             </div>
         </div>
@@ -79,14 +77,16 @@
 
     <!-- Testimonials -->
     <section>
-        <div id="testimonials" class="container-wrapper--orange container-spacing">
-            <div class="container">
+        <div id="testimonials" class="container-fluid container-wrapper--orange container-spacing">
+            <div class="container-fluid section-title-push">
                 <div class="row">
                     <div class="col-12">
                         <h2 class="text-uppercase">Testimonials:</h2>
+                        <hr class="block-divider">
                     </div>
                 </div>
-                <hr class="block-divider">
+            </div>
+            <div class="container">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card d-flex mx-auto">
@@ -95,12 +95,14 @@
                             <div class="card-text">
                                 <div class="card-name">Amy Wadge</div>
                                 <p></p>
-                                <div class="card-testimonial">Lee is an asset to any room; as an engineer, a writer and
+                                <div class="card-testimonial">Lee is an asset to any room; as an engineer, a writer
+                                    and
                                     a
                                     producer he brings so much
                                     to the table and is able to pivot to whatever is needed in the moment. He has a
                                     wealth
-                                    of knowledge and experience that makes him invaluable and he’s also the loveliest
+                                    of knowledge and experience that makes him invaluable and he’s also the
+                                    loveliest
                                     bloke
                                     ever which is a bonus.</div>
                             </div>
@@ -116,9 +118,12 @@
                             <div class="card-text">
                                 <div class="card-name">XY&O</div>
                                 <p></p>
-                                <div class="card-testimonial">No one has been able to mix our records and improve the
-                                    dynamics of our sound like Lee; he's our go-to man! He's not just an engineer, he
-                                    can apply his experience as a music creator to making the mix part of the creative
+                                <div class="card-testimonial">No one has been able to mix our records and improve
+                                    the
+                                    dynamics of our sound like Lee; he's our go-to man! He's not just an engineer,
+                                    he
+                                    can apply his experience as a music creator to making the mix part of the
+                                    creative
                                     process of the song, everything is always balanced, clear and focused.</div>
                             </div>
                             <div class="job-role">- Pop Band <i>(Kobalt Music Publishing)</i>
@@ -132,9 +137,12 @@
                             <div class="card-text">
                                 <div class="card-name">Sam Ryder</div>
                                 <p></p>
-                                <div class="card-testimonial">Lee brings a wonderful, positive vibe to the studio. From
-                                    the moment you meet him you realise that you’ve not only become friends with one of
-                                    the world’s good guys, but are working with someone who cares about the project as
+                                <div class="card-testimonial">Lee brings a wonderful, positive vibe to the studio.
+                                    From
+                                    the moment you meet him you realise that you’ve not only become friends with one
+                                    of
+                                    the world’s good guys, but are working with someone who cares about the project
+                                    as
                                     much as you do. Big up Lee!
                                 </div>
                             </div>
@@ -149,7 +157,11 @@
                             <div class="card-text">
                                 <div class="card-name">Dom Kane</div>
                                 <p></p>
-                                <div class="card-testimonial">Lee has very specialised vocal production skills and I can  always trust him to create outstanding vocal mixes that are focused in a way that only someone with good vocal ability understands.</div>
+                                <div class="card-testimonial">Lee has very specialised vocal production skills and I
+                                    can
+                                    always trust him to create outstanding vocal mixes that are focused in a way
+                                    that
+                                    only someone with good vocal ability understands.</div>
                             </div>
                             <div class="job-role">- EDM Artist <i>(Mau5Trap Records, 5302 Records)</i>
                             </div>
@@ -161,51 +173,65 @@
     </section>
 
     <section>
-        <div id="showreel" class="container-wrapper--orange container-spacing showreel-container">
+        <div id="showreel" class="container-fluid container-wrapper--orange container-spacing showreel-container">
             <div class="opaque-overlay">&nbsp;</div>
-            <<div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
-                        <h2 class="text-uppercase">Showreel:</h2>
-                    </div>
-                    <hr class="block-divider">
-                    <div class="col-12 content-text">
-                        A uniquely modern music producer who is quickly establishing himself for his fresh sounding pop
-                        production and superb engineering dexterity; Lee has wide array of skills at his disposal
-                        including
-                        electronic sound design, beat programming, orchestral composition and vocal expertise as an
-                        accomplished singer in his own right. He specialises in creating electronically driven music
-                        with
-                        close attention paid to synthesiser sound trends, however with years of experience as the lead
-                        audio
-                        engineer and producer at the established Cardiff based studio 'Acapela', he had the chance to
-                        work
-                        with many great acoustic and instrumental artists spanning over many different genres and has
-                        combined his passion for electronic music with his experience in acoustic music to create an
-                        exclusive and carefully blended combination that gives him a strong and unique identity that is
-                        grabbing the attention of fresh and upcoming artists looking to achieve chart ready productions
-                        that
-                        stand out.
-
-                        As well as his outstanding music production, Lee has proven that he can apply is hand to all
-                        things
-                        music related with a proven track record in songwriting, film composition, sound engineering,
-                        live
-                        electronic performance and session vocals.
+                    <div class="col-12 section-title-push">
+                        <h2 class="text-uppercase">Showreels:</h2>
+                        <hr class="block-divider">
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
+                            width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+                    </div>
+                    <div class="col-md-3">
+                        <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
+                            width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+                    </div>
+                    <div class="col-md-3">
+                        <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
+                            width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+                    </div>
+                    <div class="col-md-3">
+                        <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
+                            width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <hr class="block-divider">
+                <div class="row">
+                    <div class="col-md-3">
+                        <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
+                            width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+                    </div>
+                    <div class="col-md-3">
+                        <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
+                            width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+                    </div>
+                    <div class="col-md-3">
+                        <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
+                            width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+                    </div>
+                    <div class="col-md-3">
+                        <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
+                            width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section>
         <div id="about" class="container-wrapper--white container-spacing">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 section-title-push">
                         <h2 class="text-uppercase">About:</h2>
+                        <hr class="block-divider">
                     </div>
-                    <hr class="block-divider">
-                    <div class="col-12 content-text">
+                    <div class="col-12 content-text section-padding">
                         <img src="assets/images/lee-house-promo.jpg" alt="Lee House Promo Image" id="lee-promo-image">
                         A uniquely modern music producer who is quickly establishing himself for his fresh sounding pop
                         production and superb engineering dexterity; Lee has wide array of skills at his disposal
@@ -237,46 +263,77 @@
     </section>
 
     <section>
-        <div id="contact" class="container-wrapper--orange container-spacing showreel-container">
-            <div class="opaque-overlay">&nbsp;</div>
-            <<div class="container">
+        <div id="contact" class="container-wrapper--orange container-spacing contact-container">
+            <<div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 section-title-push">
                         <h2 class="text-uppercase">Contact:</h2>
+                        <hr class="block-divider">
                     </div>
-                    <hr class="block-divider">
-                    <div class="col-12 content-text">
-                        A uniquely modern music producer who is quickly establishing himself for his fresh sounding pop
-                        production and superb engineering dexterity; Lee has wide array of skills at his disposal
-                        including
-                        electronic sound design, beat programming, orchestral composition and vocal expertise as an
-                        accomplished singer in his own right. He specialises in creating electronically driven music
-                        with
-                        close attention paid to synthesiser sound trends, however with years of experience as the lead
-                        audio
-                        engineer and producer at the established Cardiff based studio 'Acapela', he had the chance to
-                        work
-                        with many great acoustic and instrumental artists spanning over many different genres and has
-                        combined his passion for electronic music with his experience in acoustic music to create an
-                        exclusive and carefully blended combination that gives him a strong and unique identity that is
-                        grabbing the attention of fresh and upcoming artists looking to achieve chart ready productions
-                        that
-                        stand out.
-
-                        As well as his outstanding music production, Lee has proven that he can apply is hand to all
-                        things
-                        music related with a proven track record in songwriting, film composition, sound engineering,
-                        live
-                        electronic performance and session vocals. For more information and examples of work please take
-                        a
-                        look in the 'services' section.
+                    <div class="container contact-card">
+                        <form method="post">
+                            <h3>Let's work together:</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *"
+                                            value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="txtEmail" class="form-control"
+                                            placeholder="Your Email *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
+                                            style="width: 100%; height: 150px;"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="width: 100%"><iframe width="100%" height="500" frameborder="0"
+                                            scrolling="no" marginheight="0" marginwidth="0"
+                                            src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=15%20Douglas%20Buildings,%20Royal%20Stuart%20Lane,%20CF10%205EL+(Lee%20House%20Music)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                            href="https://www.maps.ie/draw-radius-circle-map/">Measure km radius</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
         </div>
     </section>
 
     <footer>
-
+        <div class="container-fluid footer-container">
+            <div class="row ">
+                <div class="col-6 footer-name">
+                    LEE HOUSE //
+                </div>
+                <div class="col-6 right-align footer-details">
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i><strong> ADDRESS:</strong></p>
+                    <p>15 Douglas Buildings</p>
+                    <p>Royal Stuart Lane</p>
+                    <p>Cardiff Bay</p>
+                    <p>CF10 5EL</p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-6">
+                    <p class="footer-social">
+                        <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-youtube" aria-hidden="true"></i></span>
+                    </p>
+                </div>
+                <div class="col-6 right-align footer-details">
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i><strong> EMAIL:</strong></p>
+                    <p>leejonhouse@gmail.com</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>

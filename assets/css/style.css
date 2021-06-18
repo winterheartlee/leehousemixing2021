@@ -4,7 +4,9 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
+    }
 }
+
 
 /* Containers */
 
@@ -15,7 +17,15 @@ body {
 }
 
 .container-wrapper {
-    
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+
 }
 
 .container-wrapper--orange {
@@ -55,12 +65,27 @@ body {
 }
 
 .container-spacing {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .showreel-container {
-    background: url('../images/dummy-image-2.jpg') no-repeat bottom right fixed;
+    background: url('../images/showreel-background.jpg') no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.contact-container {
+    background: url('../images/contact-background-3.jpg') no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -78,16 +103,6 @@ body {
 
 /******** The navigation bar ********/
 
-
-
-.navalert-container {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .navbar {
     margin-bottom: 0;
     width: 100%;
@@ -99,7 +114,7 @@ body {
     border: 0;
 }
 
-.navbar .navbar-brand {
+.navbar-brand {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -214,7 +229,7 @@ body {
 .card-text {
     text-align: center;
     padding: 0.5rem 1rem;
-    font-size: 14px;
+    font-size: 1rem;
     color: #111111;
     line-height: 1.4rem
 }
@@ -237,21 +252,77 @@ body {
 
 }
 
+/**** Contact Card ****/
+
+.contact-card {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
 
 
+/**** Footer ****/
 
+.footer-container {
+    background-color: #000000;
+    color: darkgrey;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-top: 1rem solid #f05f40
+}
+
+.footer-name {
+    font-size: 2rem;
+}
+
+.footer-social {
+    color: darkgrey;
+    font-size: 2rem;
+}
+
+.footer-social span {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 5%;
+}
+
+.footer-details {
+    line-height: 0.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer-email {
+}
+
+.right-align {
+    text-align: right;
+}
 
 
 .content-text {
     line-height: 2.5rem;
 }
 
+
+
+.section-padding {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 #lee-promo-image {
     float: right;
     vertical-align: top;
     margin: 15px 15px 0px 15px; 
-    width: 500px;
-    height: 500px;
-    border: 15px solid #f05f40;
+    width: 45%;
+    height: auto;
+    border: 1rem solid #f05f40;
 }
 
+.section-title-push {
+    padding-left: 5%;
+}
