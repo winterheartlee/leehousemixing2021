@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
     <script src="https://kit.fontawesome.com/913b585bc7.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,18 +25,15 @@
 </head>
 
 <body>
+    <!-- Navigation -->
     <header>
         <div class="container-fluid">
             <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-                <a href="#home" id="section-1" class="navbar-brand">Lee House <span class="tag-line">Mixing &
+                <a href="#home" id="section-1" class="navbar-brand">Lee House // <span
+                        class="tag-line d-md-inline">Mixing
+                        &
                         Mastering</span></a>
-
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span></button>
-
-                <div class="d-none d-md-block ml-auto collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="ml-auto collapse navbar-collapse" id="collapsible-navbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mr-2"><a class="nav-link" href="#testimonials"
                                 id="section-2">Testimonials</a></li>
@@ -35,23 +41,30 @@
                         </li>
                         <li class="nav-item mr-2"><a class="nav-link" href="#about" id="section-4">About</a></li>
                         <li class="nav-item mr-2"><a class="nav-link" href="#contact" id="section-5">Contact</a></li>
+                        <li class="nav-item mr-2"><img src="assets/images/lee-house-logo-50px.png" width="50"
+                                height="50" class="d-none d-md-block " aria-hidden="true"></li>
                     </ul>
-                    <img src="assets/images/lee-house-logo-50px.png" width="50" height="50"
-                        class="d-inline-block d-none d-md-block " aria-hidden="true">
                 </div>
+
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#collapsible-navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </nav>
         </div>
     </header>
+
+    <!-- Callout / Homepage -->
     <section>
         <div id="home" class="container-fluid callout-container">
             <div class="opaque-overlay">&nbsp;</div>
             <div class="row">
                 <div class="col-12">
-                    <section class="callout jumbotron text-center">
+                    <div class="callout jumbotron text-center">
                         <h1 class="jumbotron-header">My mixes have 45+ million streams on Spotify alone.</h1>
                         <hr class="block-divider block-divider--white">
                         <p class="jumbo-tag-line">Make your music stand out...
-                    </section>
+                    </div>
                 </div>
                 <hr>
                 <div class="col-3 info-box text-center vertical-divider">
@@ -88,10 +101,10 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="card d-flex mx-auto">
                             <div class="card-image"> <img class="img-fluid d-flex mx-auto"
-                                    src="assets/images/amy-wadge.jpeg"> </div>
+                                    src="assets/images/amy-wadge-low-res.jpg"> </div>
                             <div class="card-text">
                                 <div class="card-name">Amy Wadge</div>
                                 <p></p>
@@ -111,26 +124,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card d-flex ml-auto">
-                            <div class="card-image"> <img class="img-fluid d-flex ml-auto"
-                                    src="assets/images/xy&o.jpeg"> </div>
-                            <div class="card-text">
-                                <div class="card-name">XY&O</div>
-                                <p></p>
-                                <div class="card-testimonial">No one has been able to mix our records and improve
-                                    the
-                                    dynamics of our sound like Lee; he's our go-to man! He's not just an engineer,
-                                    he
-                                    can apply his experience as a music creator to making the mix part of the
-                                    creative
-                                    process of the song, everything is always balanced, clear and focused.</div>
-                            </div>
-                            <div class="job-role">- Pop Band <i>(Kobalt Music Publishing)</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="card d-flex mx-auto">
                             <div class="card-image"> <img class="img-fluid d-flex mx-auto"
                                     src="assets/images/sam-ryder.jpeg"> </div>
@@ -150,7 +144,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card d-flex ml-auto">
+                            <div class="card-image"> <img class="img-fluid d-flex ml-auto"
+                                    src="assets/images/xy&o-low-res.jpg"> </div>
+                            <div class="card-text">
+                                <div class="card-name">XY&O</div>
+                                <p></p>
+                                <div class="card-testimonial">No one has been able to mix our records and improve
+                                    the
+                                    dynamics of our sound like Lee. He's not just an engineer,
+                                    he
+                                    can apply his experience as a music creator to making the mix part of the
+                                    creative
+                                    process of the song, everything is always balanced, clear and focused.</div>
+                            </div>
+                            <div class="job-role">- Pop Band <i>(Kobalt Music Publishing)</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="card d-flex ml-auto">
                             <div class="card-image"> <img class="img-fluid d-flex ml-auto"
                                     src="assets/images/dom-kane.jpeg"> </div>
@@ -172,6 +185,7 @@
         </div>
     </section>
 
+    <!-- Showreel -->
     <section>
         <div id="showreel" class="container-fluid container-wrapper--orange container-spacing showreel-container">
             <div class="opaque-overlay">&nbsp;</div>
@@ -183,38 +197,38 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
                             width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
                             width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
                             width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
                             width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
                     </div>
                 </div>
                 <hr class="block-divider">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
                             width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
                             width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
                             width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <iframe src="https://audiomack.com/embed/song/simi/duduke-francais?background=1" scrolling="no"
                             width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
                     </div>
@@ -223,112 +237,124 @@
         </div>
     </section>
 
+    <!-- About -->
     <section>
-        <div id="about" class="container-wrapper--white container-spacing">
+        <div id="about" class="container-fluid container-wrapper--white container-spacing">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 section-title-push">
                         <h2 class="text-uppercase">About:</h2>
                         <hr class="block-divider">
                     </div>
-                    <div class="col-12 content-text section-padding">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
                         <img src="assets/images/lee-house-promo.jpg" alt="Lee House Promo Image" id="lee-promo-image">
-                        A uniquely modern music producer who is quickly establishing himself for his fresh sounding pop
-                        production and superb engineering dexterity; Lee has wide array of skills at his disposal
-                        including
-                        electronic sound design, beat programming, orchestral composition and vocal expertise as an
-                        accomplished singer in his own right. He specialises in creating electronically driven music
-                        with
-                        close attention paid to synthesiser sound trends, however with years of experience as the lead
-                        audio
-                        engineer and producer at the established Cardiff based studio 'Acapela', he had the chance to
-                        work
-                        with many great acoustic and instrumental artists spanning over many different genres and has
-                        combined his passion for electronic music with his experience in acoustic music to create an
-                        exclusive and carefully blended combination that gives him a strong and unique identity that is
-                        grabbing the attention of fresh and upcoming artists looking to achieve chart ready productions
-                        that
-                        stand out.
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <p style="text-align:justify; line-height: 1.8rem;">After obtaining a first class degree in Audio Engineering in 2011, Lee was quickly snapped up
+                            by commercial studio ‘Acapela’ based in Cardiff and was later promoted to lead engineer
+                            where he was given the opportunity to work with many amazing artists spanning a wide variety
+                            of genre's including Pop, Dance, Rock, Electronic, Folk, Metal, Classical.<br> Since 2014
+                            Lee has been working as a freelance engineer and has been working with artists from all over
+                            the world where his mixes have tallied over 45 million plays on Spotify alone as well as
+                            plays on national radio stations such as BBC Radio 1, 2 and 6Music.</p>
 
-                        As well as his outstanding music production, Lee has proven that he can apply is hand to all
-                        things
-                        music related with a proven track record in songwriting, film composition, sound engineering,
-                        live
-                        electronic performance and session vocals. For more information and examples of work please take
-                        a
-                        look in the 'services' section.
+                        <p style="text-align:justify; line-height: 1.8rem;">With regards to his mixing style, Lee treats his mixes with surgical precision; shaping
+                            dynamics, frequencies and stereo positioning for each instrument so that everything is
+                            clear, concise and has its own space in the mix. When needed he can make a track sound huge
+                            and bombastic inline with massive chart hits whilst still adhering to the importance of
+                            maintaining dynamic intergrity.</p>
+
+                        <p style="text-align:justify; line-height: 1.8rem;"><i>Previous clients include:
+                            <br>
+                            Amy Wadge, Sam Ryder, Adam Lambert (Queen), John Adams, XY&O, Catrin Finch, Gruff Rhys,
+                            Cerys
+                            Matthews, Rusty Shackle, Dom Kane, Armada Records, Parlaphone Records, Universal Records,
+                            Deutsche Grammophon, The BBC, ITV and Channel 4.</i></p>
                     </div>
                 </div>
             </div>
-    </section>
-
-    <section>
-        <div id="contact" class="container-wrapper--orange container-spacing contact-container">
-            <<div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 section-title-push">
-                        <h2 class="text-uppercase">Contact:</h2>
-                        <hr class="block-divider">
-                    </div>
-                    <div class="container contact-card">
-                        <form method="post">
-                            <h3>Let's work together:</h3>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *"
-                                            value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="txtEmail" class="form-control"
-                                            placeholder="Your Email *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
-                                            style="width: 100%; height: 150px;"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div style="width: 100%"><iframe width="100%" height="500" frameborder="0"
-                                            scrolling="no" marginheight="0" marginwidth="0"
-                                            src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=15%20Douglas%20Buildings,%20Royal%20Stuart%20Lane,%20CF10%205EL+(Lee%20House%20Music)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                                            href="https://www.maps.ie/draw-radius-circle-map/">Measure km radius</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
         </div>
     </section>
 
+    <!-- Contact -->
+    <section>
+        <div id="contact" class="container-fluid container-wrapper--orange container-spacing">
+            <div class="container-fluid section-title-push">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-uppercase">Contact:</h2>
+                        <hr class="block-divider">
+                    </div>
+                </div>
+            </div>
+            <div class="container contact-container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <form method="post">
+                            <h3>Let's work together:</h3>
+                            <div class="form-group">
+                                <input type="text" name="txtName" class="form-control" placeholder="Your Name *"
+                                    value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *"
+                                    value="" />
+                            </div>
+                            <div class="form-group">
+                                <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
+                                    style="width: 100%; height: 300px;"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="btnSubmit" class="btn btn-dark" value="Send" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-md-12 d-none d-md-block" id="google-maps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.676545662613!2d-3.1718763840116173!3d51.464094879628085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e034851e64d23%3A0x9caf762d1c1824f0!2sDouglas%20Buildings%2C%20Royal%20Stuart%20Ln%2C%20Cardiff%20CF10%205EL!5e0!3m2!1sen!2suk!4v1624022686344!5m2!1sen!2suk"
+                            width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container-fluid footer-container">
             <div class="row ">
-                <div class="col-6 footer-name">
+                <div class="col-sm-6 col-xs-12 footer-name">
                     LEE HOUSE //
                 </div>
-                <div class="col-6 right-align footer-details">
-                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i><strong> ADDRESS:</strong></p>
-                    <p>15 Douglas Buildings</p>
-                    <p>Royal Stuart Lane</p>
-                    <p>Cardiff Bay</p>
-                    <p>CF10 5EL</p>
+                <div class="col-sm-6 col-xs-12 text-right footer-details">
+                    <a href="https://goo.gl/maps/3e3tWyuXXn4tzzzV7" target="_blank">
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i><strong> ADDRESS:</strong></p>
+                        <p>15 Douglas Buildings</p>
+                        <p>Royal Stuart Lane</p>
+                        <p>Cardiff Bay</p>
+                        <p>CF10 5EL</p>
+                    </a>
                 </div>
             </div>
             <div class="row ">
-                <div class="col-6">
+                <div class="col-sm-6 col-xs-12">
                     <p class="footer-social">
-                        <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
-                        <span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
-                        <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
-                        <span><i class="fa fa-youtube" aria-hidden="true"></i></span>
+                        <span><a href="https://www.facebook.com/Lee-House-166124060104644/" target="_blank"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/lee-house-18650579/?originalSubdomain=uk"
+                                target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+                        <span><a href="https://www.instagram.com/leejonhouse/" target="_blank"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a></span>
+                        <span><a href="https://www.youtube.com/user/leehousemusic" target="_blank"><i
+                                    class="fa fa-youtube" aria-hidden="true"></i></a></span>
                     </p>
                 </div>
-                <div class="col-6 right-align footer-details">
+                <div class="col-sm-6 col-xs-12 text-right footer-details">
                     <p><i class="fas fa-envelope" aria-hidden="true"></i><strong> EMAIL:</strong></p>
                     <p>leejonhouse@gmail.com</p>
                 </div>
