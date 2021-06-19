@@ -4,7 +4,6 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    }
 }
 
 .content-text {
@@ -27,17 +26,17 @@ body {
 
 a:link {
     color: darkgrey;
-  }
-  
-  a:visited {
+}
+
+a:visited {
     color: darkgrey;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: white;
     text-decoration: none;
-  }
-  
+}
+
 
 /******** Containers ********/
 
@@ -118,7 +117,7 @@ a:link {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 700;
-    
+
 }
 
 .nav-link {
@@ -140,7 +139,7 @@ a:link {
 }
 
 .navbar .navbar-toggler {
-    border: 1;
+    border: 1px;
 }
 
 
@@ -158,9 +157,10 @@ a:link {
 }
 
 .jumbotron .jumbo-tag-line {
-    font-size: 30px;
+    
     color: #ff8c42;
     margin: 25px 0;
+    font-size: 2rem;
 }
 
 
@@ -172,13 +172,13 @@ a:link {
 }
 
 .info-icon {
-    font-size: 3em;
+    font-size: 4vw;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
 .contact-for-quote {
-    font-size: smaller;
+    font-size: 0.8rem;
     font-style: italic;
     line-height: 0%;
     color: grey;
@@ -264,7 +264,6 @@ a:link {
 
 .contact-container {
     font-size: 20px;
-    padding: 5rem, 5rem, 5rem, 5rem;
     font-weight: bold;
 }
 
@@ -324,6 +323,48 @@ a:link {
     height: 100%;
     border: 0.5rem solid #f05f40;
     object-fit: cover;
-    
-    
+
+
+}
+
+/******** iframe styling ********/
+
+.audio-iframe {
+    height: 300px;
+    width: 100%;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+.google-maps-iframe {
+    width: 450px;
+    height: 450px;
+    border: 0;
+}
+
+/******** Media query to overwrite callout styles to fit into small mobile screens ********/
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .jumbotron {
+        margin-bottom: 0;
+        padding-top: 3.5rem;
+    }
+    .jumbotron .jumbo-tag-line{
+        font-size: 1.2rem;
+    }
+    .info-box {
+        font-size: 0.5rem; 
+    }
+    .vertical-divider {
+        height: 5rem;
+    }
+    .card {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
