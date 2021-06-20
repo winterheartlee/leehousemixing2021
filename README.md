@@ -1,59 +1,117 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Lee House Mixing & Mastering (Audio Engineering)
 
-Welcome winterheartlee,
+Lee House mixing and mastering is a portfolio website for myself as an audio mixing and mastering engineer. In my job as a freelancer in the music industry I have a variety of different types of work including Music Production, Audio Engineering, Composition and Music Performance. My previous website (built in wix) included portfolios for all of these different areas and when forwarding potential clients with a specific job in mind i.e song mixing, the site laid out too many other services that gave the impression that I was a 'Jack of all trades'.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+My solution to this issue is to build separate websites with separate domains for each service that I offer so that I can really sell that specific role to the right customers when presenting my specific portfolios.
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Landing Page Background Image](assets/images/lee-house-mixing-low-res.jpg)
 
-`python3 -m http.server`
+## Wireframe:
+- Wireframe was created using Balsamiq.
+- [View full wireframe here](assets/images/wireframe.png)
 
-A blue button should appear to click: _Make Public_,
+![Wireframe Preview](assets/images/wireframe-preview.png)
 
-Another blue button should appear to click: _Open Browser_.
+## Features 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+I wanted this website to have a very clean and simplistic design and not have too much content; I decided that a 'one page scroll' site would help accomplish this. From customer feedback it seemed that my previous website (that was not a responsive design) made it difficult to click audio play buttons on mobile devices and therefore making the information respond to the device view size was a very important part of my design; Bootstrap 4 was used to easily make the site responsive.
 
-A blue button should appear to click: _Make Public_,
+### Existing Features
 
-Another blue button should appear to click: _Open Browser_.
+- __Navigation Bar__
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  - Since I opted for a one page scroll site, from the beginning I decided that having a 'fixed' navigation bar would be essential so that users do not have to scroll all the way back to the top through the one page layout.
 
-To log into the Heroku toolbelt CLI:
+- __Landing Page__
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    - The landing page has a background image that instantly lets the user know what service I offer and puts a face to the name as well as presenting bullet point information about my services and my experience.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
 
-## Updates Since The Instructional Video
+- __Testimonials__
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  - The testimonials legitamise my skills to the user before proceeding to listen so that the user listens to the portfolio in the right frame of mind.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- __Portfolio__
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+  - **Important:** The actual audio content on this site is not yet complete; the audio samples are Soundcloud links to random songs on my own Soundcloud page but an important feature of this portfolio will be to offer genre specific audio showreel compilation tracks that will be embedded from Soundcloud tracks that are titled with my name and the genre name of the presented showreel e.g Lee House - Pop Showreel. I have chosen 8 genre categories:
+    1. Pop
+    2. EDM
+    3. R&B
+    4. Electronic
+    5. Acoustic
+    6. Country
+    7. Rock & Metal
+    8. Classical
+  
+  - I did not want to create these audio compilations until I had persmission from all the creators to use their music.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- __About__
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+  - Contains a brief background history and draws attention to my experience and previous clients.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- __Contact__
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+  - A form is included for easy contact and also shows a google maps embedded location to add a graphic aspect to this section.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- __The Footer__ 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+  - Footer containers links to social media using standard icons (from Font Awesome)and my full business address that hyperlinks to Google maps. I decided not to hyperlink my email as I personally find this frustrating as a user when an email link opens the system default email application when I don't used app based mail.
 
----
+### Features Left to Implement
 
-Happy coding!
+- An FAQ page in the footer to common questions that I get asked.
+- Finish the audio content tracks for the embedded soundcloud showreel section.
+- The contact form should send the user message to my email; it currently directs to the Code Institute dummy submit page. Through web searching it seems that PHP is needed for this function.
+
+## Testing 
+
+Chrome was used to created the design but this site has also been test successfully on Safari and Firefox. Chrome dev tools were used to test the site responsiveness on different mobile devices and the design was optimised for small, medium and large screen sizes.
+
+
+### Validator Testing 
+
+- HTML - [W3C Validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fwinterheartlee.github.io%2Fleehousemixing2021%2Findex.html)
+  - On the initial test, the validator did not like the embedded iframe code which contained obselete styling form HTML4 e.g frameborder. To overcome this issue I removed all the obselete iframe code and added a CSS class for styling the iframe width, height and border.
+  ![Landing Page Background Image](assets/images/html-test.png)
+  - The site currently has no errors from the W3C Validator.
+- CSS - [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwinterheartlee.github.io%2Fleehousemixing2021%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors were found when passing through the official W3C Jigsaw validator.
+  ![Landing Page Background Image](assets/images/css-test.png)
+
+### Unfixed Bugs
+
+The text content in the 'About' section has the styling applied directly on the text on the HTML page; I had originally created a class for this text on the style.css page but for some reason the styling was not applying and I could not work out why. I think it is possibly to do with parent/child relationships of the div classes used, and whilst this is not an error, it is not good practice to apply styling directly in the HTML.
+
+
+## Deployment
+
+This site has been deployed using GitHub page, the live link can be found here - https://winterheartlee.github.io/leehousemixing2021/index.html
+
+
+## Credits 
+
+The programming languages used were HTML5, CSS3 and Javascript was loaded via the Bootstrap 4 framework for the collapsable toggle navigation.
+
+### Frameworks, Libraries and Programs:
+
+1. [Bootstrap 4.6:](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+    - Bootstrap was used mainly for its grid features which help create the device responsive design.
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Quicksand' font into the style.css and this font was used for all the text throughout the site.
+1. [Font Awesome:](https://fontawesome.com/)
+    - All graphic icons were free icons from Font Awesome.
+1. [GitPod](https://www.gitpod.io/)
+    - GitPod was the IDE used to create the code.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from GitPod.
+1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
+    - Photoshop was used to edit images and compress them for smaller file sizes.
+1. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframe design.
+
+### Media:
+
+- Background image for the 'Showreel' section was a license free image from [Upsplash](https://unsplash.com/photos/OQlPahHa7Bc)
+- Audio player and content was embedded from [SoundCloud](https://soundcloud.com)
